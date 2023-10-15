@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+
+    <script
+      src="https://kit.fontawesome.com/6943d7505a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Basic Music Player App</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav>
+
+        <!-- first_circle -->
+
+        <ul class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </ul>
+
+        <!-- secong_circle -->
+
+        <ul class="circle">
+          <i class="fa-solid fa-bars"></i>
+        </ul>
+      </nav>
+
+      <img src="imgs/hero.png" alt="" class="hero">
+
+      <h3 class="heading">
+        Despacito
+      </h3>
+
+      <p class="description">
+        Luis Fonsi Ft.Puerto Rican
+      </p>
+
+      <audio id="song">
+        <source src="imgs/song.mp3" type="audio/mp3">
+      </audio>
+
+      <input type="range" id="progress">
+
+      <nav class="play_section">
+        
+        <!-- 1st -->
+
+        <ul class="circle">
+            <i class="fa-solid fa-angles-left"></i>
+          </ul>
+
+          <!-- 2nd -->
+
+          <ul class="circle play" id="play_btn">
+            <i class="fa-solid fa-play" ></i>
+          </ul>
+
+          <!-- 3rd -->
+
+          <ul class="circle">
+            <i class="fa-solid fa-angles-right"></i>
+          </ul>
+      </nav>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
